@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusVault Gaming - Jasa Jual Beli Akun Game Terpercaya 24 Jam</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Rajdhani -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        gaming: ['Rajdhani', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased flex flex-col min-h-screen selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navbar / Header -->
+    <header class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo Brand -->
+                <div class="flex items-center gap-3 cursor-pointer" onclick="resetFilter()">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 via-purple-600 to-pink-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/25">
+                        <i class="fa-solid fa-gamepad text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="font-gaming font-bold text-2xl tracking-wider text-white uppercase">Nexus<span class="text-indigo-400">Vault</span></span>
+                        <p class="text-[10px] text-emerald-400 font-semibold -mt-1 flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                            Online 24 Jam Nonstop
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Navigasi Desktop -->
+                <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+                    <a href="#katalog" class="hover:text-indigo-400 transition">List Harga Akun</a>
+                    <a href="#pembayaran" class="hover:text-indigo-400 transition">Metode Pembayaran</a>
+                    <a href="#jual-akun" class="hover:text-indigo-400 transition">Titip / Jual Akun</a>
+                    <a href="https://wa.me/6289518493695?text=Halo%20Admin%20NexusVault,%20saya%20ingin%20konsultasi%20jual/beli%20akun%20game." target="_blank" 
+                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-xl font-semibold shadow-md shadow-emerald-600/20 transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order WA 24 Jam</span>
+                    </a>
+                </nav>
+
+                <!-- Tombol Mobile -->
+                <div class="flex md:hidden">
+                    <a href="https://wa.me/6289518493695?text=Halo%20Admin%20NexusVault,%20saya%20ingin%20order%20akun%20game." target="_blank"
+                       class="inline-flex items-center gap-1.5 bg-emerald-600 text-white px-3.5 py-2 rounded-xl text-xs font-semibold shadow-sm">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Chat WA</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-slate-900 via-indigo-950/40 to-slate-950 py-12 sm:py-20 px-4 border-b border-slate-800/60">
+        <div class="max-w-5xl mx-auto text-center space-y-6 relative z-10">
+            <!-- Badge Status Online 24 Jam -->
+            <div class="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/15 border border-indigo-400/30 text-indigo-300 text-xs font-semibold">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Layanan Online 24 Jam • Transaksi Aman & Bergaransi Anti Hackback</span>
+            </div>
+
+            <h1 class="font-gaming text-4xl sm:text-6xl font-bold tracking-tight uppercase text-white leading-tight">
+                Jual Beli <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Akun Game Sultan</span> Terpercaya
+            </h1>
+            
+            <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+                Temukan akun Mobile Legends, Free Fire, PUBG Mobile, Genshin Impact, hingga Valorant dengan spesifikasi lengkap. Pemesanan fleksibel kapan saja 24/7 langsung via WhatsApp!
+            </p>
+
+            <!-- Info Cepat Fitur Layanan -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto pt-2 text-left">
+                <div class="bg-slate-900/80 border border-slate-800 p-3.5 rounded-2xl flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-white">Buka 24 Jam</p>
+                        <p class="text-[11px] text-slate-400">Order kapan saja</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800 p-3.5 rounded-2xl flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-indigo-500/15 text-indigo-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-white">Data Polos/Aman</p>
+                        <p class="text-[11px] text-slate-400">Garansi 100%</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800 p-3.5 rounded-2xl flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-purple-500/15 text-purple-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-white">E-Wallet & Bank</p>
+                        <p class="text-[11px] text-slate-400">Pembayaran mudah</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800 p-3.5 rounded-2xl flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-pink-500/15 text-pink-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-white">Proses Kilat</p>
+                        <p class="text-[11px] text-slate-400">Serah terima cepat</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="max-w-xl mx-auto pt-2">
+                <div class="relative flex items-center">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 text-slate-400"></i>
+                    <input type="text" id="searchInput" placeholder="Cari tipe akun, skin, rank, atau nama game..." 
+                        class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition text-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content: List Harga Berdasarkan Tipe Akun Game -->
+    <main id="katalog" class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Header Katalog & Filter Tipe Akun Game -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+            <div>
+                <h2 class="font-gaming text-3xl font-bold text-white uppercase tracking-wide">List Harga & Stok Akun Game</h2>
+                <p class="text-xs sm:text-sm text-slate-400 mt-0.5">Pilih tipe game di bawah untuk melihat daftar harga & spesifikasi lengkap</p>
+            </div>
+            <!-- Tombol Filter Tipe Game -->
+            <div id="gameTypeFilterContainer" class="flex flex-wrap gap-2">
+                <!-- Kategori tipe game dirender via JS -->
+            </div>
+        </div>
+
+        <!-- Info Jumlah Stok & Pilihan Tampilan (Kartu / Tabel Harga) -->
+        <div class="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-400 border-b border-slate-800 pb-3">
+            <span id="accountCountText">Menampilkan semua stok akun game</span>
+            <div class="flex items-center gap-2">
+                <span class="font-medium text-slate-300">Tampilan Harga:</span>
+                <div class="inline-flex rounded-xl bg-slate-900 border border-slate-800 p-1">
+                    <button id="viewGridBtn" onclick="setLayoutMode('grid')" class="px-3 py-1 rounded-lg bg-indigo-600 text-white font-semibold shadow-sm transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-grip"></i> Kartu
+                    </button>
+                    <button id="viewTableBtn" onclick="setLayoutMode('table')" class="px-3 py-1 rounded-lg text-slate-400 hover:text-white font-semibold transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-table-list"></i> List Harga
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kontainer Katalog Akun Game -->
+        <div id="accountsContainer">
+            <!-- Dirender via JavaScript -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="emptyState" class="hidden text-center py-16 bg-slate-900/60 rounded-3xl border border-slate-800">
+            <div class="w-16 h-16 bg-slate-800 text-slate-400 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl">
+                <i class="fa-solid fa-ghost"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">Akun Tidak Ditemukan</h3>
+            <p class="text-sm text-slate-400 mt-1 mb-4">Coba cari kata kunci lain atau tampilkan semua tipe akun game.</p>
+            <button onclick="resetFilter()" class="px-5 py-2.5 bg-indigo-600 text-white text-sm font-semibold rounded-xl hover:bg-indigo-500 transition">
+                Tampilkan Semua Akun
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Section: Waktu Pemesanan & Metode Pembayaran (E-Wallet & Rekening Bank) -->
+    <section id="pembayaran" class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <!-- Kartu Waktu & Bentuk Pemesanan Online 24 Jam -->
+            <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-xl bg-emerald-500/15 text-emerald-400 text-xs font-bold mb-4">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>OPERASIONAL ONLINE 24 JAM</span>
+                    </div>
+                    <h3 class="font-gaming text-2xl sm:text-3xl font-bold text-white uppercase mb-3">Waktu & Bentuk Pemesanan</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed mb-5">
+                        Layanan kami aktif penuh <strong class="text-white">24 jam setiap hari (Senin – Minggu)</strong>. Anda dapat memesan akun kapan saja—baik pagi, siang, malam, maupun dini hari—dengan sistem transaksi langsung dan transparan.
+                    </p>
+                    <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-lg bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center shrink-0 mt-0.5">1</span>
+                            <span>Pilih tipe akun game dari daftar harga di atas lalu klik <strong class="text-white">Order via WA</strong>.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-lg bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center shrink-0 mt-0.5">2</span>
+                            <span>Konfirmasi ketersediaan stok & pilih metode pembayaran (E-Wallet atau Rekening Bank).</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-lg bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center shrink-0 mt-0.5">3</span>
+                            <span>Setelah pembayaran terverifikasi, data email & password akun langsung dikirim saat itu juga (Full Akses & Panduan Amankan Akun).</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-6 pt-5 border-t border-slate-800 flex flex-wrap items-center justify-between gap-3">
+                    <span class="text-xs text-slate-400">Admin WhatsApp Resmi: <strong class="text-emerald-400">+62 895-1849-3695</strong></span>
+                    <a href="https://wa.me/6289518493695?text=Halo%20Admin,%20saya%20mau%20tanya%20stok%20akun%20game%20yang%20ready%20sekarang." target="_blank"
+                       class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition inline-flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Hubungi Sekarang
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kartu Metode Pembayaran (E-Wallet & Rekening Bank) -->
+            <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-xl bg-indigo-500/15 text-indigo-400 text-xs font-bold mb-4">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span>PEMBAYARAN FLEKSIBEL</span>
+                    </div>
+                    <h3 class="font-gaming text-2xl sm:text-3xl font-bold text-white uppercase mb-3">E-Wallet & Rekening Bank</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed mb-5">
+                        Mendukung berbagai metode pembayaran digital dan transfer antar bank dengan proses pengecekan mutasi otomatis 24 jam:
+                    </p>
+
+                    <!-- Grid E-Wallet -->
+                    <div class="mb-4">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Pembayaran E-Wallet & QRIS</p>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                            <div class="bg-slate-800/90 border border-slate-700/80 rounded-xl p-3 text-center">
+                                <p class="font-bold text-sky-400 text-sm">DANA</p>
+                                <p class="text-[10px] text-slate-400">Bebas Admin</p>
+                            </div>
+                            <div class="bg-slate-800/90 border border-slate-700/80 rounded-xl p-3 text-center">
+                                <p class="font-bold text-purple-400 text-sm">OVO</p>
+                                <p class="text-[10px] text-slate-400">Instan 24 Jam</p>
+                            </div>
+                            <div class="bg-slate-800/90 border border-slate-700/80 rounded-xl p-3 text-center">
+                                <p class="font-bold text-emerald-400 text-sm">GoPay</p>
+                                <p class="text-[10px] text-slate-400">Instan 24 Jam</p>
+                            </div>
+                            <div class="bg-slate-800/90 border border-slate-700/80 rounded-xl p-3 text-center">
+                                <p class="font-bold text-orange-400 text-sm">ShopeePay</p>
+                                <p class="text-[10px] text-slate-400">& All QRIS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid Rekening Bank -->
+                    <div>
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Transfer Rekening Bank</p>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                            <div class="bg-slate-800/90 border border-slate-700/80 rounded-xl p-3 text-center">
+                                <p class="font-bold text-blue-400 text-sm">BCA</p>
+                                <p class="text-[10px] text-slate-400">Transfer Bank</p>
+                            </div>
+                            <div class="bg-slate-800/90 border border-slate-700/80 rounded-xl p-3 text-center">
+                                <p class="font-bold text-sky-300 text-sm">BRI</p>
+                                <p class="text-[10px] text-slate-400">Transfer Bank</p>
+                            </div>
+                            <div class="bg-slate-800/90 border border-slate-700/80 rounded-xl p-3 text-center">
+                                <p class="font-bold text-amber-400 text-sm">Mandiri</p>
+                                <p class="text-[10px] text-slate-400">Transfer Bank</p>
+                            </div>
+                            <div class="bg-slate-800/90 border border-slate-700/80 rounded-xl p-3 text-center">
+                                <p class="font-bold text-teal-400 text-sm">SeaBank / BNI</p>
+                                <p class="text-[10px] text-slate-400">Transfer Bank</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-5 text-[11px] text-slate-400">
+                    <i class="fa-solid fa-circle-info text-indigo-400 mr-1"></i> Nomor rekening & nomor E-Wallet tujuan akan diberikan langsung oleh Admin via WhatsApp resmi saat konfirmasi order untuk menghindari penipuan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Formulir Jual Akun Game / Order Kustom Langsung ke WA -->
+    <section id="jual-akun" class="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-gradient-to-br from-slate-900 via-indigo-950/30 to-slate-900 border border-indigo-500/30 rounded-3xl p-6 sm:p-8 shadow-xl">
+            <div class="text-center max-w-xl mx-auto mb-6">
+                <span class="px-3 py-1 rounded-full bg-pink-500/15 text-pink-400 text-xs font-bold">FAST ORDER / TITIP JUAL AKUN</span>
+                <h3 class="font-gaming text-2xl sm:text-3xl font-bold text-white uppercase mt-2">Formulir Order & Jual Akun ke WhatsApp</h3>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1">Isi detail pesanan beli akun atau penawaran jual akun Anda, lalu kirim langsung ke WhatsApp Admin (+62 895-1849-3695).</p>
+            </div>
+
+            <form id="quickOrderForm" onsubmit="submitCustomWA(event)" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Jenis Transaksi</label>
+                    <select id="transType" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="Beli Akun Game">Beli Akun Game</option>
+                        <option value="Jual Akun Game ke Admin">Jual Akun Game ke Admin</option>
+                        <option value="Titip Jual (Rekber / Post)">Titip Jual Akun (Posting Katalog)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Tipe Game</label>
+                    <select id="transGame" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="Mobile Legends">Mobile Legends</option>
+                        <option value="Free Fire">Free Fire</option>
+                        <option value="PUBG Mobile">PUBG Mobile</option>
+                        <option value="Genshin Impact">Genshin Impact</option>
+                        <option value="Valorant">Valorant</option>
+                        <option value="eFootball / FC Mobile">eFootball / FC Mobile</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Metode Pembayaran / Pencairan</label>
+                    <select id="transPayment" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="E-Wallet (DANA / OVO / GoPay / ShopeePay)">E-Wallet (DANA / OVO / GoPay / ShopeePay)</option>
+                        <option value="Transfer Rekening Bank (BCA / BRI / Mandiri / BNI)">Transfer Rekening Bank (BCA / BRI / Mandiri / BNI)</option>
+                        <option value="QRIS All Payment">QRIS All Payment</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Budget / Harga Penawaran (Rp)</label>
+                    <input type="text" id="transBudget" required placeholder="Contoh: Rp 250.000" 
+                        class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+
+                <div class="sm:col-span-2">
+                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Spesifikasi Akun / Kode Stok</label>
+                    <textarea id="transSpec" rows="2" required placeholder="Contoh: Mau order kode #ML-01 atau cari akun ML rank Mythic Glory minimal 150 skin..." 
+                        class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                </div>
+
+                <div class="sm:col-span-2 pt-2">
+                    <button type="submit" class="w-full py-3.5 px-6 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg shadow-emerald-600/20 transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Kirim Pesanan ke WhatsApp (+62 895-1849-3695)</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-900 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-gamepad text-indigo-400 text-base"></i>
+                <span class="font-gaming font-bold text-white text-base tracking-wider uppercase">NexusVault Gaming</span>
+                <span>&copy; 2026. Online 24 Jam.</span>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <span>Order WA: <strong class="text-emerald-400">+62 895-1849-3695</strong></span>
+                <span>•</span>
+                <span>E-Wallet & Transfer Bank</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Detail Spesifikasi Akun & Pilihan Pembayaran Sebelum Order WA -->
+    <div id="detailModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-slate-950/80 backdrop-blur-sm p-4 sm:p-6 flex items-center justify-center">
+        <div class="bg-slate-900 border border-slate-700 text-slate-100 rounded-3xl max-w-xl w-full overflow-hidden shadow-2xl">
+            <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between bg-slate-950/60">
+                <div class="flex items-center gap-2">
+                    <span id="modalCode" class="px-2.5 py-1 rounded-lg bg-indigo-500/20 text-indigo-300 text-xs font-bold">#KODE</span>
+                    <span id="modalGameType" class="text-xs font-semibold text-slate-400">Tipe Game</span>
+                </div>
+                <button onclick="closeDetailModal()" class="w-8 h-8 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="p-6 space-y-4">
+                <img id="modalImage" src="" alt="Preview Akun Game" class="w-full h-48 object-cover rounded-2xl bg-slate-800">
+                
+                <div class="flex flex-wrap items-start justify-between gap-2">
+                    <h3 id="modalTitle" class="text-xl font-bold text-white"></h3>
+                    <span id="modalPrice" class="text-xl font-extrabold text-emerald-400"></span>
+                </div>
+
+                <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-4 space-y-2 text-xs">
+                    <p class="font-bold text-slate-300 uppercase tracking-wider">Spesifikasi Lengkap Akun:</p>
+                    <ul id="modalSpecsList" class="space-y-1.5 text-slate-300 list-disc list-inside">
+                        <!-- Spesifikasi dirender via JS -->
+                    </ul>
+                </div>
+
+                <!-- Pilih Metode Pembayaran Sebelum Lanjut ke WA -->
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Pilih Metode Pembayaran Anda:</label>
+                    <select id="modalPaymentSelect" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                        <option value="E-Wallet (DANA)">E-Wallet - DANA</option>
+                        <option value="E-Wallet (OVO)">E-Wallet - OVO</option>
+                        <option value="E-Wallet (GoPay)">E-Wallet - GoPay</option>
+                        <option value="E-Wallet (ShopeePay / QRIS)">E-Wallet - ShopeePay / QRIS</option>
+                        <option value="Rekening Bank (BCA)">Rekening Bank - BCA</option>
+                        <option value="Rekening Bank (BRI)">Rekening Bank - BRI</option>
+                        <option value="Rekening Bank (Mandiri)">Rekening Bank - Mandiri</option>
+                        <option value="Rekening Bank (BNI / SeaBank)">Rekening Bank - BNI / SeaBank</option>
+                    </select>
+                </div>
+
+                <button id="modalOrderBtn" type="button" class="w-full py-3.5 px-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Order Sekarang via WhatsApp (24 Jam)</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Katalog & Integrasi Order WhatsApp -->
+    <script>
+        // Nomor WhatsApp Admin Resmi
+        const ADMIN_WA_NUMBER = "6289518493695";
+
+        // Database Stok & List Harga Berdasarkan Tipe Akun Game
+        const gameAccounts = [
+            {
+                id: 1,
+                code: "ML-01",
+                gameType: "Mobile Legends",
+                tier: "Sultan Collector",
+                title: "Akun ML Mythic Glory 120★ • 285 Skin (Collector & Legend)",
+                price: 850000,
+                priceFormatted: "Rp 850.000",
+                status: "Ready 24 Jam",
+                loginType: "Moonton Sepaket Gmail (Polos)",
+                image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80",
+                specs: [
+                    "Rank Tertinggi: Mythic Immortal 120 Bintang",
+                    "Total Skin: 285 Skin (Gusion Legend, Granger Collector, Ling Collector, KOF Lengkap)",
+                    "Emblem: Max All Level 60",
+                    "Bind: All Unbind (Hanya Moonton + Gmail pribadi siap serah terima)"
+                ]
+            },
+            {
+                id: 2,
+                code: "ML-02",
+                gameType: "Mobile Legends",
+                tier: "Mid-Tier Hemat",
+                title: "Akun ML Mythic Honor • 115 Skin (Epic Limit & Starlight)",
+                price: 230000,
+                priceFormatted: "Rp 230.000",
+                status: "Ready 24 Jam",
+                loginType: "Moonton Sepaket Gmail",
+                image: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80",
+                specs: [
+                    "Rank Saat Ini: Mythical Honor 35 Bintang",
+                    "Total Skin: 115 Skin (8 Epic Shop/Limit, 15 Starlight, 18 Special)",
+                    "Winrate Hero Favorit: 64.5% (All Season)",
+                    "Garansi Anti Hackback 100%"
+                ]
+            },
+            {
+                id: 3,
+                code: "FF-01",
+                gameType: "Free Fire",
+                tier: "Old Sultan Evo",
+                title: "Akun FF Old Season 4 • 5 Senjata Evo Max & Bundle Langka",
+                price: 650000,
+                priceFormatted: "Rp 650.000",
+                status: "Ready 24 Jam",
+                loginType: "Google / Gmail Polos",
+                image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=800&q=80",
+                specs: [
+                    "Level Akun: Lv. 74 (Akun Tua terawat)",
+                    "Senjata Evo: AK Blue Flame Draco Max, MP40 Cobra Max, SCAR Megalodon Max",
+                    "Vault: 420+ Set Bundle, Emote Lobby Lengkap, Katana Lobby",
+                    "Login Google (Email & Sandi langsung ganti ke milik pembeli)"
+                ]
+            },
+            {
+                id: 4,
+                code: "PUBG-01",
+                gameType: "PUBG Mobile",
+                tier: "Glacier Max",
+                title: "Akun PUBG Ace Dominator • M416 Glacier Lv.7 (On Hit)",
+                price: 1150000,
+                priceFormatted: "Rp 1.150.000",
+                status: "Ready 24 Jam",
+                loginType: "Single Login Twitter / Email",
+                image: "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80",
+                specs: [
+                    "Senjata Upgrade: M416 The Fool Lv.5 & M416 Glacier Lv.7 (Loot Crate)",
+                    "Setelan Mythic: 48 Mythic Fashion + Helm & Tas Inferno",
+                    "Kendaraan: Dacia & UAZ Skin Kolaborasi",
+                    "Link Kosong, siap ganti nomor HP & email pembeli"
+                ]
+            },
+            {
+                id: 5,
+                code: "GI-01",
+                gameType: "Genshin Impact",
+                tier: "Endgame AR 60",
+                title: "Akun Genshin Server Asia AR 60 • 18 Karakter B5 + Sign",
+                price: 520000,
+                priceFormatted: "Rp 520.000",
+                status: "Ready 24 Jam",
+                loginType: "Hoyoverse Email Polos",
+                image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80",
+                specs: [
+                    "Server Asia • Adventure Rank 60 (Spiral Abyss 36★ Mudah)",
+                    "Karakter B5: Neuvillette C1 + Sign, Furina C2, Raiden Shogun, Nahida, Zhongli",
+                    "Username Unset / Birthday Set • No Minus / No Topup Ilegal",
+                    "Email Hoyoverse bisa langsung diganti ke email pembeli"
+                ]
+            },
+            {
+                id: 6,
+                code: "VAL-01",
+                gameType: "Valorant",
+                tier: "Ascendant Bundle",
+                title: "Akun Valorant Region Indonesia • 9 Skin Premium (Kuronami & Reaver)",
+                price: 480000,
+                priceFormatted: "Rp 480.000",
+                status: "Ready 24 Jam",
+                loginType: "Riot ID + Email Pertama (FE)",
+                image: "https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=800&q=80",
+                specs: [
+                    "Rank: Ascendant 1 • Region Indonesia (VP Murah)",
+                    "Vandal: Kuronami, Reaver, Prime • Phantom: Oni, Recon",
+                    "Melee: Xenohunter Knife & RGX Butterfly",
+                    "Full Access (First Email disertakan, bisa ganti email & password)"
+                ]
+            }
+        ];
+
+        // State Filter & Tampilan
+        let selectedGameType = "Semua Game";
+        let searchQuery = "";
+        let layoutMode = "grid"; // 'grid' atau 'table'
+
+        const gameTypes = ["Semua Game", ...new Set(gameAccounts.map(item => item.gameType))];
+
+        // Render Tombol Kategori Tipe Akun Game
+        function renderGameTypeFilters() {
+            const container = document.getElementById("gameTypeFilterContainer");
+            container.innerHTML = "";
+
+            gameTypes.forEach(type => {
+                const isActive = selectedGameType === type;
+                const btn = document.createElement("button");
+                btn.textContent = type;
+                btn.className = isActive
+                    ? "px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-md shadow-indigo-600/25 transition"
+                    : "px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 hover:text-white transition";
+
+                btn.onclick = () => {
+                    selectedGameType = type;
+                    renderGameTypeFilters();
+                    renderAccounts();
+                };
+                container.appendChild(btn);
+            });
+        }
+
+        // Ubah Mode Tampilan List Harga (Kartu vs Tabel List Harga)
+        function setLayoutMode(mode) {
+            layoutMode = mode;
+            const gridBtn = document.getElementById("viewGridBtn");
+            const tableBtn = document.getElementById("viewTableBtn");
+
+            if (mode === "grid") {
+                gridBtn.className = "px-3 py-1 rounded-lg bg-indigo-600 text-white font-semibold shadow-sm transition flex items-center gap-1.5";
+                tableBtn.className = "px-3 py-1 rounded-lg text-slate-400 hover:text-white font-semibold transition flex items-center gap-1.5";
+            } else {
+                tableBtn.className = "px-3 py-1 rounded-lg bg-indigo-600 text-white font-semibold shadow-sm transition flex items-center gap-1.5";
+                gridBtn.className = "px-3 py-1 rounded-lg text-slate-400 hover:text-white font-semibold transition flex items-center gap-1.5";
+            }
+            renderAccounts();
+        }
+
+        // Helper Buat Link Order WhatsApp
+        function createWhatsAppOrderUrl(account, paymentMethod = "E-Wallet / Rekening Bank") {
+            const message = `Halo Admin NexusVault (Online 24 Jam), saya ingin *ORDER AKUN GAME*:%0A%0A` +
+                            `• *Kode Stok:* ${account.code}%0A` +
+                            `• *Tipe Game:* ${account.gameType} (${account.tier})%0A` +
+                            `• *Judul Akun:* ${account.title}%0A` +
+                            `• *Harga:* ${account.priceFormatted}%0A` +
+                            `• *Metode Pembayaran:* ${paymentMethod}%0A%0A` +
+                            `Apakah stok ini masih ready untuk diproses sekarang?`;
+            return `https://wa.me/${ADMIN_WA_NUMBER}?text=${message}`;
+        }
+
+        // Render Katalog / List Harga Akun Game
+        function renderAccounts() {
+            const container = document.getElementById("accountsContainer");
+            const emptyState = document.getElementById("emptyState");
+            const countText = document.getElementById("accountCountText");
+
+            const filtered = gameAccounts.filter(acc => {
+                const matchType = selectedGameType === "Semua Game" || acc.gameType === selectedGameType;
+                const matchSearch = acc.title.toLowerCase().includes(searchQuery) ||
+                                    acc.gameType.toLowerCase().includes(searchQuery) ||
+                                    acc.tier.toLowerCase().includes(searchQuery) ||
+                                    acc.code.toLowerCase().includes(searchQuery);
+                return matchType && matchSearch;
+            });
+
+            countText.textContent = `Menampilkan ${filtered.length} akun siap order 24 jam` + (selectedGameType !== "Semua Game" ? ` untuk tipe "${selectedGameType}"` : "");
+
+            if (filtered.length === 0) {
+                container.innerHTML = "";
+                emptyState.classList.remove("hidden");
+                return;
+            }
+
+            emptyState.classList.add("hidden");
+
+            // Tampilan Tabel List Harga Ringkas
+            if (layoutMode === "table") {
+                container.innerHTML = `
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-xl">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-slate-950/90 border-b border-slate-800 text-[11px] uppercase tracking-wider text-slate-400">
+                                    <th class="py-4 px-5">Kode</th>
+                                    <th class="py-4 px-5">Tipe Game & Tier</th>
+                                    <th class="py-4 px-5">Spesifikasi Utama</th>
+                                    <th class="py-4 px-5">Harga</th>
+                                    <th class="py-4 px-5 text-right">Aksi Order (24 Jam)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-800/80 text-sm">
+                                ${filtered.map(acc => `
+                                <tr class="hover:bg-slate-800/40 transition">
+                                    <td class="py-4 px-5 font-bold text-indigo-400 whitespace-nowrap">#${acc.code}</td>
+                                    <td class="py-4 px-5 whitespace-nowrap">
+                                        <p class="font-bold text-white">${acc.gameType}</p>
+                                        <span class="inline-block mt-0.5 px-2 py-0.5 rounded-md bg-indigo-500/15 text-indigo-300 text-[11px] font-semibold">${acc.tier}</span>
+                                    </td>
+                                    <td class="py-4 px-5 max-w-md">
+                                        <p class="font-semibold text-slate-200 line-clamp-1">${acc.title}</p>
+                                        <p class="text-xs text-slate-400 mt-0.5">${acc.loginType}</p>
+                                    </td>
+                                    <td class="py-4 px-5 font-extrabold text-emerald-400 whitespace-nowrap text-base">${acc.priceFormatted}</td>
+                                    <td class="py-4 px-5 whitespace-nowrap text-right">
+                                        <div class="inline-flex items-center gap-2">
+                                            <button onclick="openDetailModal(${acc.id})" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition">
+                                                Detail
+                                            </button>
+                                            <a href="${createWhatsAppOrderUrl(acc)}" target="_blank" class="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition inline-flex items-center gap-1.5">
+                                                <i class="fa-brands fa-whatsapp"></i> Order WA
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>`).join("")}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>`;
+                return;
+            }
+
+            // Tampilan Kartu Katalog
+            container.innerHTML = `
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                ${filtered.map(acc => `
+                <div class="bg-slate-900 border border-slate-800 hover:border-indigo-500/60 rounded-3xl overflow-hidden shadow-lg hover:shadow-indigo-500/10 transition-all duration-300 flex flex-col group">
+                    <!-- Thumbnail Game -->
+                    <div class="relative h-48 overflow-hidden bg-slate-800 cursor-pointer" onclick="openDetailModal(${acc.id})">
+                        <img src="${acc.image}" alt="${acc.title}" 
+                             onerror="this.src='https://placehold.co/800x450/0f172a/818cf8?text=${encodeURIComponent(acc.gameType)}'"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+                        
+                        <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-xl bg-slate-950/85 backdrop-blur-xs border border-slate-700 text-white text-[11px] font-bold">
+                            ${acc.gameType} • #${acc.code}
+                        </span>
+                        <span class="absolute top-3.5 right-3.5 px-2.5 py-1 rounded-xl bg-emerald-500/90 text-slate-950 text-[10px] font-extrabold uppercase">
+                            ${acc.status}
+                        </span>
+                        <span class="absolute bottom-3 left-3.5 px-2.5 py-0.5 rounded-lg bg-indigo-600/90 text-white text-[11px] font-semibold">
+                            Tipe: ${acc.tier}
+                        </span>
+                    </div>
+
+                    <!-- Detail Kartu -->
+                    <div class="p-5 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 onclick="openDetailModal(${acc.id})" class="cursor-pointer font-bold text-base sm:text-lg text-white leading-snug mb-2 group-hover:text-indigo-400 transition">
+                                ${acc.title}
+                            </h3>
+                            <p class="text-xs text-slate-400 mb-3 flex items-center gap-1.5">
+                                <i class="fa-solid fa-key text-indigo-400"></i>
+                                <span>Login: ${acc.loginType}</span>
+                            </p>
+                            <ul class="space-y-1 text-xs text-slate-300 mb-4">
+                                <li class="line-clamp-1"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i>${acc.specs[0]}</li>
+                                <li class="line-clamp-1"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i>${acc.specs[1]}</li>
+                            </ul>
+                        </div>
+
+                        <!-- Harga & Tombol Order WA -->
+                        <div class="pt-4 border-t border-slate-800">
+                            <div class="flex items-center justify-between mb-3">
+                                <div>
+                                    <p class="text-[10px] text-slate-400 uppercase font-semibold">Harga Akun</p>
+                                    <p class="text-xl font-extrabold text-emerald-400">${acc.priceFormatted}</p>
+                                </div>
+                                <span class="text-[10px] text-slate-400 bg-slate-800 px-2.5 py-1 rounded-lg">
+                                    E-Wallet / Bank
+                                </span>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-2.5">
+                                <button type="button" onclick="openDetailModal(${acc.id})"
+                                    class="inline-flex items-center justify-center gap-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold py-2.5 px-3 rounded-xl transition">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <span>Spek & Bayar</span>
+                                </button>
+                                <a href="${createWhatsAppOrderUrl(acc)}" target="_blank"
+                                    class="inline-flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold py-2.5 px-3 rounded-xl shadow-md shadow-emerald-600/20 transition">
+                                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                                    <span>Order WA</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>`).join("")}
+            </div>`;
+        }
+
+        // Buka Modal Spesifikasi & Pilih Pembayaran
+        function openDetailModal(accountId) {
+            const acc = gameAccounts.find(a => a.id === accountId);
+            if (!acc) return;
+
+            document.getElementById("modalCode").textContent = `#${acc.code}`;
+            document.getElementById("modalGameType").textContent = `${acc.gameType} (${acc.tier})`;
+            document.getElementById("modalTitle").textContent = acc.title;
+            document.getElementById("modalPrice").textContent = acc.priceFormatted;
+
+            const imgEl = document.getElementById("modalImage");
+            imgEl.src = acc.image;
+            imgEl.onerror = function() {
+                this.src = `https://placehold.co/800x450/0f172a/818cf8?text=${encodeURIComponent(acc.gameType)}`;
+            };
+
+            const specsList = document.getElementById("modalSpecsList");
+            specsList.innerHTML = acc.specs.map(s => `<li>${s}</li>`).join("");
+
+            const orderBtn = document.getElementById("modalOrderBtn");
+            orderBtn.onclick = () => {
+                const selectedPayment = document.getElementById("modalPaymentSelect").value;
+                const waUrl = createWhatsAppOrderUrl(acc, selectedPayment);
+                window.open(waUrl, "_blank");
+            };
+
+            document.getElementById("detailModal").classList.remove("hidden");
+            document.body.style.overflow = "hidden";
+        }
+
+        // Tutup Modal
+        function closeDetailModal() {
+            document.getElementById("detailModal").classList.add("hidden");
+            document.body.style.overflow = "auto";
+        }
+
+        document.getElementById("detailModal").addEventListener("click", (e) => {
+            if (e.target.id === "detailModal") closeDetailModal();
+        });
+
+        // Kirim Formulir Order / Jual Akun Kustom Langsung ke WhatsApp
+        function submitCustomWA(event) {
+            event.preventDefault();
+            const type = document.getElementById("transType").value;
+            const game = document.getElementById("transGame").value;
+            const payment = document.getElementById("transPayment").value;
+            const budget = document.getElementById("transBudget").value.trim();
+            const spec = document.getElementById("transSpec").value.trim();
+
+            const message = `Halo Admin NexusVault (Online 24 Jam),%0A%0A` +
+                            `*FORMULIR ${type.toUpperCase()}*%0A` +
+                            `• *Tipe Game:* ${game}%0A` +
+                            `• *Harga / Budget:* ${budget}%0A` +
+                            `• *Pembayaran / Pencairan:* ${payment}%0A` +
+                            `• *Detail / Spesifikasi:* ${spec}%0A%0A` +
+                            `Mohon info lanjut ya Admin!`;
+
+            window.open(`https://wa.me/${ADMIN_WA_NUMBER}?text=${message}`, "_blank");
+        }
+
+        // Reset Pencarian & Filter
+        function resetFilter() {
+            selectedGameType = "Semua Game";
+            searchQuery = "";
+            document.getElementById("searchInput").value = "";
+            renderGameTypeFilters();
+            renderAccounts();
+        }
+
+        // Event Pencarian Real-time
+        document.getElementById("searchInput").addEventListener("input", (e) => {
+            searchQuery = e.target.value.toLowerCase().trim();
+            renderAccounts();
+        });
+
+        // Inisialisasi Halaman
+        renderGameTypeFilters();
+        renderAccounts();
+    </script>
+</body>
+          </html>
